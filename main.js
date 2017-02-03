@@ -16,16 +16,17 @@ for (var i = 0; i < findItems.length; i++) {
 
 
 //Question 2
-
-function cost() {
-  var findCost = [];
+function find() {
+  var findItems = [];
   for ( var count = 0; count < items.length; count++) {
-    if (items[count] >= 14 && items[count] <= 18) {
+    if (items[count] !== 0) {
       findItems.push(items[count].price)
   }
 }
-var betweenItems = 0
-for (var i = 0; i < findCost.length; i++) {
-  betweenItems += findCost[i]
-
-  x >= 0    &&    x < 0.33
+var betweenItems = [];
+for (var i = 0; i < findItems.length; i++) {
+  if (findItems[i] > 14 && findItems[i] < 18){
+    betweenItems.push(items[i].title)
+  }
+  }return betweenItems;
+}
