@@ -1,6 +1,6 @@
 
 
-function find() {
+function avgPrice() {
   var findItems = [];
   for ( var count = 0; count < items.length; count++) {
     if (items[count] !== 0) {
@@ -16,7 +16,7 @@ for (var i = 0; i < findItems.length; i++) {
 
 
 //Question 2
-function find() {
+function between() {
   var findItems = [];
   for ( var count = 0; count < items.length; count++) {
     if (items[count] !== 0) {
@@ -29,4 +29,50 @@ for (var i = 0; i < findItems.length; i++) {
     betweenItems.push(items[i].title)
   }
   }return betweenItems;
+}
+
+//Question 3
+
+function findGBP() {
+  var findItems = [];
+  for ( var count = 0; count < items.length; count++) {
+    if (items[count].currency_code === "GBP") {
+      findItems.push(items[count].title);
+        findItems.push(items[count].price);
+  }
+} return findItems;
+}
+
+
+
+
+
+//Question 4
+
+function findWood() {
+  var findItems = [];
+  for ( var count = 0; count < items.length; count++) {
+    if (items[count].materials.includes("wood")) {
+      findItems.push(items[count].title);
+  }
+} return findItems;
+}
+
+
+
+
+
+
+
+
+
+//Question 6
+
+function findSellers() {
+  var findItems = [];
+  for ( var count = 0; count < items.length; count++) {
+    if (items[count].who_made.includes("i_did")) {
+      findItems.push(items[count].title);
+  }
+} return findItems.length + " were made by their sellers";
 }

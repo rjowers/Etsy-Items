@@ -417,7 +417,7 @@ var items = [{
   "description": "This is a large glass pitcher that was used in a Wisconsin bar for years made by Schlitz. We believe it is from the mid to late 1970s. It is in very good shape with no chips or cracks (please see pictures) and still displays well.  It measures 9 inches tall & about 6 inches wide. It is made of cardboard and will be shipped in a protective sleeve. It would look great on your bar and it is the perfect gift for a Schlitz fan. \n\nSHIPPING INFORMATION: We usually ship in 2-3 days of getting a cleared payment. Tracking is included in our shipping price. If the shipping turns out to be cheaper than what we quoted you... we will refund the difference. We also offer free local pick-up... in most situations. Please ask about this if you are interested. We ship almost exclusively through the USPS, since they seem to have the best rates. If you need another shipping company, please let us know.\r\n\r\nInternational Shipping:\r\nDue to the new (higher) shipping prices, please ask us about all international shipping first.\r\n\r\nIn the case of Import Duties, Taxes and Surcharges... these are NOT included in the item price or shipping charges. These charges are the buyer&#39;s responsibility.\r\n\r\nWe will not mark &quot;gift&quot; on the customs form, so please do not ask us to.\r\n\r\nWe will try to find you the cheapest shipping that still has tracking information, but sometimes these estimates are high. It is not unusual for us to have to refund some shipping due to these high estimates.",
   "creation_tsz": 1399762949,
   "ending_tsz": 1410390149,
-  "original_creation_tsz": 1399762949,
+  "original_creation_tsz": 139976294o9,
   "last_modified_tsz": 1399762949,
   "price": 18.00,
   "currency_code": "GBP",
