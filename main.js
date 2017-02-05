@@ -32,17 +32,16 @@ var betweenItems = [];
 for (var i = 0; i < findItems.length; i++) {
   if (findItems[i] > 14 && findItems[i] < 18){
     betweenItems.push(items[i].title)
+
   }
-  }return betweenItems;
+}return betweenItems;
 }
 
+var Answer2 = document.getElementById("answer2");
+answer2.innerHTML = "<li>" + between(items)[0] + "</li>" + "<li>" + between(items)[1] + "</li>" + "<li>" + between(items)[2] + "</li>";
 
-//var Answer2 = document.getElementById("answer2");
-//answer2.innerHTML = between(items);
 
-document.getElementById("answer2").children[0].innerHTML += "<li>"+allItems[allItems.length-1]+"</li>";
-document.getElementById("answer2").children[0].innerHTML += "<li>"+allItems[allItems.length-1]+"</li>";
-document.getElementById("answer2").children[0].innerHTML += "<li>"+allItems[allItems.length-1]+"</li>";
+
 //Question 3
 
 function findGBP() {
@@ -74,7 +73,34 @@ function findWood() {
 }
 
 var Answer4 = document.getElementById("answer4");
-answer4.innerHTML = findWood(items);
+answer4.innerHTML =
+"<li>" + findWood(items)[0] + "</li>" + "<li>" + findWood(items)[1] + "</li>" + "<li>" + findWood(items)[2] + "</li>"
++ "<li>" + findWood(items)[3] + "</li>" + "<li>" + findWood(items)[4] + "</li>" ;
+
+
+//Question 5
+
+
+var mat =[];
+function eight() {
+  var findM = [];
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].materials.length >= 8) {
+      // findM.push(items[i].title);
+       answer5.innerHTML = items[i].title + " has" + items[i].materials.length + " materials:";
+  }
+}
+var allMaterials = []
+  for (var count = 0; count < items[i].materials[count].length; count++) {
+      answer5.innerHTML = + items[i].materials[count];
+    }
+  }
+
+var Answer5 = document.getElementById("answer5");
+//answer5.innerHTML = eight(items);
+
+
+
 
 
 

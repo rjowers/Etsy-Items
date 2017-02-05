@@ -50,3 +50,7 @@ h3 {
     top: 62px;
     position: relative;
 }
+
+li {
+  list-style: none;
+}
