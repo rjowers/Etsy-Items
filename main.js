@@ -49,14 +49,13 @@ function findGBP() {
   for ( var count = 0; count < items.length; count++) {
     if (items[count].currency_code === "GBP") {
       findItems.push(items[count].title);
-        findItems.push(items[count].price);
         var Answer3 = document.getElementById("answer3");
         answer3.innerHTML = items[count].title + " costs " + "£" + items[count].price;
 
   }
 }
 }
-findGBP(items)
+findGBP()
 
 
 
@@ -71,12 +70,19 @@ function findWood() {
       findItems.push(items[count].title);
   }
 } return findItems;
-}
 
+var dostuff = findWood();
 var Answer4 = document.getElementById("answer4");
-answer4.innerHTML =
-"<li>" + findWood(items)[0] + "</li>" /+ "<li>" + findWood(items)[1] + "</li>" + "<li>" + findWood(items)[2] + "</li>"
-+ "<li>" + findWood(items)[3] + "</li>" + "<li>" + findWood(items)[4] + "</li>" ;
+for ( var i = 0; i < dostuff.length; i++) {
+answer4.innerHTML += "<p>" + dostuff[i].materials + "<p>";
+
+}
+};
+
+
+
+//"<li>" + findWood(items)[0] + "</li>" /+ "<li>" + findWood(items)[1] + "</li>" + "<li>" + findWood(items)[2] + "</li>"
+//+ "<li>" + findWood(items)[3] + "</li>" + "<li>" + findWood(items)[4] + "</li>" ;
 
 
 //Question 5
@@ -87,14 +93,19 @@ function eight() {
   for (var i = 0; i < items.length; i++) {
     if (items[i].materials.length >= 8){
       // findM.push(items[i].title);
-       answer5.innerHTML = items[i].title + " has " + items[i].materials.length + " materials";
+       answer5.innerHTML += items[i].title + " has " + items[i].materials.length + " materials: ";
+      for (var count = 0; count < items[i].materials.length; count++){
+        answer5.innerHTML +=  items[count].materials;
   }
 }
-  /*for (var count= 0; count <items[count].materials.length; count++)
-          answer5.innerHTML =items[count].materials[i];
-    */    };
+}
+};
 
-eight(items)
+//answer5.innerHTML += "<p>" +
+          //answer5.innerHTML += items[count].materials;
+
+
+eight()
 
 //Question 6
 
